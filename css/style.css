@@ -201,7 +201,7 @@ footer{color:var(--muted);padding:24px 0 40px;text-align:center}
 /* === Applied choice: Option B (Compact lockup) === */
 .logo{height:clamp(24px,5vw,36px)}
 .brand{gap:.5rem}
-.brand > div:last-child{font-size:clamp(14px,4.2vw,20px);letter-spacing:.4px}
+/* Wordmark styles removed: logo-only header */
 
 @media (max-width:480px){ .navlinks{gap:.6rem} }
 
@@ -211,7 +211,6 @@ footer{color:var(--muted);padding:24px 0 40px;text-align:center}
 @media (max-width: 419.98px){
   header.nav .logo{ display:flex !important; }
   header.nav .logo img{ vertical-align:middle; transform: translateY(1px); }
-  header.nav .brand > div:last-child{ line-height:1; }
 
   header.nav{ flex-wrap:wrap; row-gap:6px; }
   .navlinks{ width:100%; justify-content:space-between; gap:.6rem; }
@@ -225,7 +224,7 @@ footer{color:var(--muted);padding:24px 0 40px;text-align:center}
   .wrap{ padding:16px; }
   .hero{ padding:36px 0; }
   .lead{ font-size:1rem; }
-  .photogrid .photo{ height:72px; }
+  .photogrid .photo{ height:auto; min-height:0; }
   .stats{ gap:12px; }
   .stat .n{ font-size:24px; }
   .services, .grid, .stack{ gap:12px; }
