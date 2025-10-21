@@ -122,34 +122,34 @@ footer{color:var(--muted);padding:24px 0 40px;text-align:center}
     radial-gradient(400px 200px at 30% 30%, rgba(255,255,255,.1), transparent 60%),
     #0f172a;
 }
-.photogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
-.photo{position:relative;min-height:110px;border-radius:12px;border:1px solid var(--border);overflow:hidden;background:#0f172a}
-.photo.visual{display:flex;align-items:center;justify-content:center;padding:12px;background:radial-gradient(280px 200px at 50% 45%,rgba(124,58,237,.35),transparent 70%),#0f172a}
-.photo.visual img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 40px rgba(12,18,32,.6))}
-.photo.prompt{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  padding:18px;
+.hero-highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.hero-highlight{
+  position:relative;
+  min-height:110px;
+  border-radius:12px;
+  border:1px solid rgba(124,58,237,.42);
+  overflow:hidden;
   background:
     linear-gradient(150deg, rgba(124,58,237,.22), rgba(34,211,238,.16)),
     rgba(15,23,42,.92);
-  border-color:rgba(124,58,237,.42);
   box-shadow:0 26px 60px rgba(8,12,25,.45);
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
-.photo.prompt .prompt-tag{
+.hero-highlight .prompt-tag{
   font-size:12px;
   letter-spacing:.05em;
   text-transform:uppercase;
   color:rgba(221,230,255,.8);
 }
-.photo.prompt p{
+.hero-highlight p{
   margin:0;
   font-size:13px;
   line-height:1.55;
   color:rgba(244,247,255,.92);
 }
-
 @keyframes heroDrift{
   0%{transform:translate3d(0,0,0) scale(1)}
   50%{transform:translate3d(18px,-12px,0) scale(1.02)}
@@ -179,23 +179,12 @@ footer{color:var(--muted);padding:24px 0 40px;text-align:center}
   .services,.grid,.stack{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:640px){
-  .services,.grid,.stack{grid-template-columns:1fr}
-  .photogrid{grid-template-columns:1fr;gap:18px}
-  .photo.visual{
-    min-height:200px;
-    padding:0;
-    background:
-      linear-gradient(180deg,rgba(15,23,42,.6),rgba(15,23,42,.1)),
-      url("../assets/logos/real_time_analytics.png");
-    background-size:cover;
-    background-position:center;
-    border:0;
-  }
-  .photo.visual img{display:none}
-  .ctaarea{flex-direction:column;align-items:flex-start}
-  .cta-actions{width:100%;justify-content:flex-start}
-  .ctaarea{flex-direction:column;align-items:flex-start}
-  .cta-actions{width:100%;justify-content:flex-start}
+.services,.grid,.stack{grid-template-columns:1fr}
+.hero-highlights{grid-template-columns:1fr}
+.ctaarea{flex-direction:column;align-items:flex-start}
+.cta-actions{width:100%;justify-content:flex-start}
+.ctaarea{flex-direction:column;align-items:flex-start}
+.cta-actions{width:100%;justify-content:flex-start}
 }
 
 /* === Applied choice: Option B (Compact lockup) === */
