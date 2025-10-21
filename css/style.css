@@ -180,6 +180,18 @@ footer{color:var(--muted);padding:24px 0 40px;text-align:center}
 }
 @media (max-width:640px){
   .services,.grid,.stack{grid-template-columns:1fr}
+  .photogrid{grid-template-columns:1fr;gap:18px}
+  .photo.visual{
+    min-height:200px;
+    padding:0;
+    background:
+      linear-gradient(180deg,rgba(15,23,42,.6),rgba(15,23,42,.1)),
+      url("../assets/logos/real_time_analytics.png");
+    background-size:cover;
+    background-position:center;
+    border:0;
+  }
+  .photo.visual img{display:none}
   .ctaarea{flex-direction:column;align-items:flex-start}
   .cta-actions{width:100%;justify-content:flex-start}
   .ctaarea{flex-direction:column;align-items:flex-start}
